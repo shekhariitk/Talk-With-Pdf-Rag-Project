@@ -4,5 +4,6 @@ pypdf
 faiss-cpu
 langchain
 euriai 
+langchain-huggingface
 langchain_community
 sentence-transformers
