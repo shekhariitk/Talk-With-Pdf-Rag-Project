@@ -1,0 +1,21 @@
+# ignore sample data folder
+sample_data/
+# ignore model checkpoints
+checkpoints/
+# ignore logs
+logs/
+# ignore environment files
+.env
+# ignore Python cache files
+__pycache__/
+*.pyc
+# ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# ignore virtual environment folders
+venv/
+env/
+.venv/
+.env/
+# ignore system files
+.DS_Store
+Thumbs.db

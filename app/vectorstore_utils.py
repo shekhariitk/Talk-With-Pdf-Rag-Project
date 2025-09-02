@@ -1,0 +1,14 @@
+from langchain_community.vectorstores import FAISS
+# This is the new, correct way
+from langchain_huggingface import HuggingFaceEmbeddings
+from typing import List
+
+def create_faiss_index(texts: List[str]) :
+    embeddings = HuggingFaceEmbeddings(model_name = "sentence-transformers/all-mpnet-base-v2")
+    return FAISS.from_texts(texts, embeddings)
+
+
+def retrive_relevant_docs(vectorstore: FAISS, query: str, k: int = 4):
+    return vectorstore.similarity_search(query, k=k)
+
+
